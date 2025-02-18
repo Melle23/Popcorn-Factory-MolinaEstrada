@@ -41,8 +41,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:textColor="@color/white"
+            android:textColor="@color/black_background"
             android:text="When a devastating event befalls the city of San Fransokyo..."
             />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buyTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black_background"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:text="Buy my tickets!"
+
+        />
+    
+    <TextView
+        android:id="@+id/seatLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textStyle="italic"
+        android:textColor="@color/grisClaro"/>
 </LinearLayout>

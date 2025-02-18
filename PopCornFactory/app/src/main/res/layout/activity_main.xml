@@ -1,49 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121">
+    android:orientation="vertical"
+    android:background="@color/grayblack">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SERIES"
-            android:textColor="#FFC107"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-medium"
-            android:paddingBottom="8dp" />
+            android:text="@string/movies"
+            android:textColor="@color/yellow"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
 
-        <GridView
-            android:id="@+id/gridViewSeries"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnWidth="100dp"
-            android:numColumns="3"
-            android:layout_marginBottom="16dp"
-            android:isScrollContainer="false" />
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="32dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MOVIES"
-            android:textColor="#FFC107"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-medium"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp" />
-
-        <GridView
-            android:id="@+id/gridViewMovies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnWidth="100dp"
-            android:numColumns="3"
-            android:isScrollContainer="false" />
     </LinearLayout>
-</ScrollView>
+
+    <GridView
+        android:id="@+id/gridViewMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:numColumns="3"
+        android:paddingHorizontal="6dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
